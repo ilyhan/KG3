@@ -143,21 +143,10 @@
     <ClInclude Include="GLModel.h" />
     <ClInclude Include="GLShader.h" />
     <ClInclude Include="GLVertexBuffer.h" />
+    <ClInclude Include="Loader.h" />
+    <ClInclude Include="Render3D.h" />
     <ClInclude Include="Shader.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <FxCompile Include="PixelShader.hlsl">
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
-    </FxCompile>
-    <FxCompile Include="VertexShader.hlsl">
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
-    </FxCompile>
+    <ClInclude Include="VertexData.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PixelShader1.glsl" />
@@ -165,6 +154,8 @@
     <None Include="VertexShader1.glsl" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Cube2.txt" />
+    <Text Include="cubeObj.txt" />
     <Text Include="obj.mtl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

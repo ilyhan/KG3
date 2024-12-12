@@ -44,10 +44,15 @@
     <ClInclude Include="GLModel.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <FxCompile Include="VertexShader.hlsl" />
-    <FxCompile Include="PixelShader.hlsl" />
+    <ClInclude Include="Render3D.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Loader.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexData.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="PixelShader1.glsl">
@@ -58,5 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="obj.mtl" />
+    <Text Include="cubeObj.txt" />
+    <Text Include="Cube2.txt" />
   </ItemGroup>
 </Project>
